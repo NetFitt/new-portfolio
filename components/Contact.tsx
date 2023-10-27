@@ -24,7 +24,7 @@ function Contact() {
             <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl '>
                 Contact 
             </h3>
-            <div className='flex flex-col space-y-5'>
+            <div className='flex flex-col space-y-10 md:space-y-2'>
                 <h4 className='text-2xl md:text-3xl font-semibold text-center '>
                     i got just what u need.{""}
                     <span className='decoration-main-color/50  underline'>Let's talk</span>
@@ -43,8 +43,8 @@ function Contact() {
                         <p className='text-lg md:text-xl '>mohamedzerouali203@gmail.com</p>
                     </div>
                 </div>
-                <form className='flex flex-col space-y-2 w-[400px] md:w-fit mx-auto' onSubmit={handleSubmit(onSubmit)}>
-                    <div className='flex space-x-2 w-[400px] md:w-auto '>
+                <form className='flex flex-col space-y-2 w-[370px] md:w-fit mx-auto' onSubmit={handleSubmit(onSubmit)}>
+                    <div className='flex space-x-2 w-[370px] md:w-auto '>
                         <input className='contactInput w-[50%] ' {...register('name')} placeholder='Name' type="text" />
                         <input className='contactInput w-[50%]' {...register('email')} placeholder='Email' type="email" />
                     </div>

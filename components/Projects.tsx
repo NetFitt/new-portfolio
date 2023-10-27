@@ -3,7 +3,8 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 
 const Projects = () => {
-  const projects = [1,2,3,4]
+  const projects = [{image:'mockup-oukla.png',title:'Oukla',description:''},
+  {image:'mockup-khayrokom.png',title:'',description:''}]
   return (
     <div 
       className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto 
@@ -37,15 +38,15 @@ const Projects = () => {
               viewport={{
                 once:true
               }}
-              src='/nextJS.png'
-              
+              src={`/${project.image}`}
+              className="h-36 md:h-52"
               alt="1"
             />
             <div>
-              <h4>Case Study 1 of 3: UPS clone</h4>
+              <h4>{project.title}</h4>
             </div>
             <p className="text-lg text-center md:text-left ">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi corporis sapiente fugit magnam. Sint impedit nostrum totam ex porro quaerat suscipit obcaecati unde similique perferendis id, accusantium atque. Aliquid, ullam!
+              
             </p>
           </div>
         ))}

@@ -41,7 +41,7 @@ const Skills = () => {
         >
             <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-center text-xl'>Skill's</h3>
             <h3 className='absolute top-32 uppercase text-sm text-gray-500 tracking-[3px] '>Hover over the skills for display proficiency</h3>
-            <div className='grid grid-cols-5 gap-4'>
+            <div className='grid md:grid-cols-5 grid-cols-4 gap-4'>
                 {data.map((ele,index)=>(
                     <Skill key={index} percentage={ele.percentage} directionLeft={ele.dirction} image={ele.image}/>
                 ))}

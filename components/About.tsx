@@ -39,7 +39,9 @@ const About = () => {
                 Hi! I’m Mohamed Zerouali, a Web developer from algeria,
                 bomeredes with 3 years of experience in Front end and back end development.
 
-                I love Coding and enjoy Making new designes in my free time. This portfolio showcases some of my work and passion for Coding and designing. Let’s connect!</p>
+                I love Coding and enjoy Making new designes in my free time. This portfolio showcases some of my work and passion for Coding and designing. Let’s connect!
+            </p>
+        
         </div>
     </motion.div>
   )
