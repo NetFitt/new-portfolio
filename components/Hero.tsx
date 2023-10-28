@@ -21,6 +21,7 @@ function Hero() {
                 src='/example.png'
                 width={100}
                 height={100}
+                priority
                 alt='profile pic'
             />
             <div className='z-20'>
