@@ -2,6 +2,7 @@
 import React from 'react'
 import { SocialIcon} from "react-social-icons"
 import {motion} from "framer-motion"
+import Link from 'next/link'
 
 function Header() {
   return (
@@ -25,11 +26,11 @@ function Header() {
             duration:1.25
         }}
         >
-            <SocialIcon url='https://facebook.com' fgColor='gray' bgColor='transparent' />
+            <SocialIcon url='https://www.facebook.com/mohamed.dz.14606/' target='_blank' fgColor='gray' bgColor='transparent' />
        
-            <SocialIcon url='https://linkedin.com' fgColor='gray' bgColor='transparent' />
+            <SocialIcon url='https://linkedin.com/in/mohamed-zerouali-b550a6221/' target='_blank' fgColor='gray' bgColor='transparent' />
         
-            <SocialIcon url='https://twitter.com' fgColor='gray' bgColor='transparent' />
+            <SocialIcon url='https://github.com/NetFitt/' target='_blank' fgColor='gray' bgColor='transparent' />
             
         </motion.div>
         
@@ -50,8 +51,10 @@ function Header() {
                 duration:1
             }}
         >
-            <SocialIcon className='cursor-pointer' network='email' fgColor='gray' bgColor='transparent'/>
-            <p className='uppercase hidden md:inline-flex text-sm text-gray-400' >Get in touch!</p>
+            <Link href={'#contact'}>
+                <SocialIcon className='cursor-pointer' network='email' fgColor='gray' bgColor='transparent'/>
+                <p className='uppercase hidden md:inline-flex text-sm text-gray-400' >Get in touch!</p>
+            </Link>
         </motion.div>
 
 

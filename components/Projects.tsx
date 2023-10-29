@@ -1,10 +1,14 @@
 "use client"
 import { motion } from "framer-motion"
-import Image from "next/image"
+import Link from "next/link"
 
 const Projects = () => {
-  const projects = [{image:'mockup-oukla.png',title:'Oukla',description:''},
-  {image:'mockup-khayrokom.png',title:'',description:''}]
+
+
+
+
+  const projects = [{image:'mockup-oukla.png',title:'Oukla',description:'', link:'https://oukla.vercel.app'},
+  {image:'mockup-khayrokom.png',title:'khayrokom',description:'',link:''}]
   return (
     <div 
       className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto 
@@ -22,26 +26,31 @@ const Projects = () => {
             key={index}
           
           >
-            <motion.img
-              initial={{
-                y:-300,
-                opacity:0
-              }}
-              whileInView={{
-                opacity:1,
-                y:8
-              }}
-              transition={{
-                duration:1.2
-              }}
-        
-              viewport={{
-                once:true
-              }}
-              src={`/${project.image}`}
-              className="h-36 md:h-52"
-              alt="1"
-            />
+            <Link href={`${project.link}`} target="_blank">
+              <motion.img
+                initial={{
+                  y:-300,
+                  opacity:0
+                }}
+                whileInView={{
+                  opacity:1,
+                  y:8
+                }}
+                whileHover={{
+                  height:246
+                }}
+                transition={{
+                  duration:0.7
+                }}
+          
+                viewport={{
+                  once:true
+                }}
+                src={`/${project.image}`}
+                className="h-36 cursor-pointer md:h-56"
+                alt="1"
+              />
+            </Link>
             <div>
               <h4>{project.title}</h4>
             </div>

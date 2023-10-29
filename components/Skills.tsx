@@ -4,23 +4,19 @@ import { motion } from 'framer-motion'
 import Skill from './Skill'
 
 const Skills = () => {
-    const data = [{percentage:"96%", dirction:false ,image:"/figma.png"},
+    const data = [{percentage:"88%", dirction:false ,image:"/figma.png"},
     {percentage:"96%", dirction:false ,image:"/CSS.png"},
-    {percentage:"96%", dirction:true ,image:"/html.png"},
-    {percentage:"96%", dirction:true ,image:"/javascript.png"},
-    {percentage:"96%", dirction:true ,image:"/php.png"},
-    {percentage:"96%", dirction:true ,image:"/ts.png"},
+    {percentage:"100%", dirction:false ,image:"/html.png"},
+    {percentage:"85%", dirction:false ,image:"/javascript.png"},
+    {percentage:"80%", dirction:false ,image:"/php.png"},
+    {percentage:"90%", dirction:false ,image:"/ts.png"},
     {percentage:"96%", dirction:true ,image:"/tail.png"},
-    {percentage:"96%", dirction:true ,image:"/materialui.png"},
-    {percentage:"96%", dirction:true ,image:"/nextJS.png"},
-    {percentage:"96%", dirction:true ,image:"/illustrator.png"},
-    {percentage:"96%", dirction:true ,image:"/photoshop.png"},
+    {percentage:"97%", dirction:true ,image:"/materialui.png"},
+    {percentage:"87%", dirction:true ,image:"/nextJS.png"},
+    {percentage:"75%", dirction:true ,image:"/illustrator.png"},
+    {percentage:"75%", dirction:true ,image:"/photoshop.png"},
     {percentage:"96%", dirction:true ,image:"/express.png"},
     {percentage:"96%", dirction:true ,image:"/node.png"},
-
-
-
-   
    ]
 
 
